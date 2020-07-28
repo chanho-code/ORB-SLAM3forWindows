@@ -45,7 +45,7 @@ We have tested the library in Windows 10, Visual Studio 2015.
 ## Pangolin  
 - Open cmake-gui and Make a 'build' directory in ORB-SLAM3forWindows/Thirdparty/Pangolin
 - Click Configure and select Visual Studio 14 2015 x64.
-- cmake error: could not find git for clone of ... : Disable BUILD_EXTERN_GLEW, LIBJPEG, LIBPNG and input value directly  
+- cmake error: could not find git for clone of ... : Disable BUILD_EXTERN_GLEW, LIBJPEG, LIBPNG and input value directly (used GLEW only)  
 - If window says Configuring Done, it's OK  
 - Click Generate and open the resulting project in the build directory.  
 - Change build type to Release.  
@@ -61,16 +61,17 @@ We have tested the library in Windows 10, Visual Studio 2015.
 - Right click on ORB-SLAM3 project -> Properties -> General -> Target Extension: .lib, and Configure Type: Static Library (.lib)  
 - ORB-SLAM3 project -> Properties -> C/C++ Tab -> Code Generation -> Runtime Library: Multi-threaded(/MT)  
 - ORB-SLAM3 project -> Properties -> C/C++ Tab -> Preprocessor -> Preprocessor Definitions: check 'COMPILEDWITHC11'.  
-- ORB-SLAM3 project -> Properties -> Linker -> Advanced -> Delete import library.  
-- Build ORB-SLAM3 (not ALL_BUILD). Finish(ORB_SLAM3.lib)
+- Build ORB-SLAM3 (not ALL_BUILD). Finish(ORB_SLAM3.lib)  
 
 ## Test Program (example: The EuRoC MAV Dataset: monocular-inertial)  
 - Open the build directory in ORB-SLAM3forWindows.  
 - Change build type to Release.  
 - Setting Boost Library (include, dir, ...)  
 - Right click on mono_inertial_euroc project -> Properties -> C/C++ Tab -> Code Generation -> Runtime Library: Multi-threaded(/MT)  
+- mono_inertial_euroc project -> Properties -> Linker -> Advanced -> Delete import library.  
+- Define 'usleep' function in mono_inertial_euroc.cc
 - Build mono_inertial_euroc.  Finish(mono_inertial_euroc.exe).
-- You will find the test program in ORB-SLAM3forWindows\Examples\Monocular-Inertial\Release.
+- You will find the test program in ORB-SLAM3forWindows\Examples\Monocular-Inertial\Release.  
 - Download the EuRoC MAV Dataset: https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets
 - Convert ORBvoc.txt.tar.gz -> ORBvoc.txt
 - Execute the following script:  
