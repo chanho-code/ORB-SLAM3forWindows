@@ -63,7 +63,10 @@ We have tested the library in Windows 10, Visual Studio 2015.
 - ORB-SLAM3 project -> Properties -> C/C++ Tab -> Preprocessor -> Preprocessor Definitions: check 'COMPILEDWITHC11'.  
 - Build ORB-SLAM3 (not ALL_BUILD). Finish(ORB_SLAM3.lib)  
 
-## Test Program (example: The EuRoC MAV Dataset: monocular-inertial)  
+# Test Program
+We have tested the following projects: mono_euroc, mono_inertial_euroc, stereo_euroc, stereo_inertial_euroc
+
+## example: The EuRoC MAV Dataset: monocular-inertial
 - Open the build directory in ORB-SLAM3forWindows.  
 - Change build type to Release.  
 - Setting Boost Library (include, dir, ...)  
@@ -71,7 +74,7 @@ We have tested the library in Windows 10, Visual Studio 2015.
 - mono_inertial_euroc project -> Properties -> Linker -> Advanced -> Delete import library.  
 - Define 'usleep' function in mono_inertial_euroc.cc
 - Build mono_inertial_euroc.  Finish(mono_inertial_euroc.exe).
-- *Visual Studio 0xC00000FD: Stack overflow error*: Right click on the project -> Properties -> Linker -> System -> Stack Reserve Size: 8388608 (the default stack size is 1MB = 1048576)  
+- **Visual Studio 0xC00000FD: Stack overflow error**: Right click on the project -> Properties -> Linker -> System -> Stack Reserve Size: 8388608 (the default stack size is 1MB = 1048576)
 - You will find the test program in ORB-SLAM3forWindows\Examples\Monocular-Inertial\Release.  
 - Download the EuRoC MAV Dataset: https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets
 - Convert ORBvoc.txt.tar.gz -> ORBvoc.txt
