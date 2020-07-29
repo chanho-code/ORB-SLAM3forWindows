@@ -64,10 +64,10 @@ We have tested the library in Windows 10, Visual Studio 2015.
 - Build ORB-SLAM3 (not ALL_BUILD). Finish(ORB_SLAM3.lib)  
 
 # Test Program
-We have tested the following projects: mono_euroc, mono_inertial_euroc, stereo_euroc, stereo_inertial_euroc
+We have tested the following projects: **mono_euroc, mono_inertial_euroc, stereo_euroc, stereo_inertial_euroc**
 
 ## example: The EuRoC MAV Dataset: monocular-inertial
-- Open the build directory in ORB-SLAM3forWindows.  
+- Open **mono_inertial_euroc** directory in ORB-SLAM3forWindows.  
 - Change build type to Release.  
 - Setting Boost Library (include, dir, ...)  
 - Right click on mono_inertial_euroc project -> Properties -> C/C++ Tab -> Code Generation -> Runtime Library: Multi-threaded(/MT)  
