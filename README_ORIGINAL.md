@@ -37,7 +37,7 @@ For a closed-source version of ORB-SLAM3 for commercial purposes, please contact
 If you use ORB-SLAM3 in an academic work, please cite:
 
     @article{ORBSLAM3_2020,
-      title={{ORB-SLAM3}: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map {SLAM}},
+      title={ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM},
       author={Campos, Carlos AND Elvira, Richard AND G\´omez, Juan J. AND Montiel, Jos\'e M. M. AND Tard\'os, Juan D.},
       journal={arXiv preprint arXiv:2007.11898},
       year={2020}
