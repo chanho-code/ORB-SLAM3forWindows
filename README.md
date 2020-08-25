@@ -8,7 +8,7 @@ We have tested the library in Windows 10, Visual Studio 2015.
 - ORB-SLAM2 for windows_2: https://github.com/phdsky/ORBSLAM24Windows  
 
 # To do...
-Update to ORB-SLAM3 V0.3
+Update from ORB-SLAM3 V0.2 to V0.3
 
 
 # Prerequisites
